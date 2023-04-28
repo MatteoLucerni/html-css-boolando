@@ -3,3 +3,125 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --header: #ff6900;
+    --footer: #1a1a1a;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    padding-top: 70px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    background-color: var(--header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar{
+    color: white;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a{
+    margin-right: 10px;
+}
+
+nav ul li i{
+    margin-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+/* main */
+
+main{
+    padding: 50px 0;
+}
+
+.main-container{
+    flex-wrap: wrap;
+}
+
+.col{
+    width: calc(100% / 3);
+}
+
+.card{
+    height: 600px;
+    position: relative;
+}
+
+.card-desc{
+    height: 100px;
+}
+
+.discount, .sost{
+    padding: 5px;
+    padding-bottom: 20px;
+    position: absolute;
+    height: 20px;
+    bottom: 50px;
+}
+
+.sost{
+    left: 50px;
+}
+
+.favourite{
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+/* footer */
+
+footer{
+    color: white;
+    background-color: var(--footer);
+}
+
+.footer-bar{
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-legal, .social{
+    column-gap: 10px;
+}
+
+/* utils */
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.debug{
+    border: 2px dashed black;
+}
