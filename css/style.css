@@ -73,24 +73,39 @@ main{
     padding: 50px 0;
 }
 
+main img{
+    width: 100%;
+}
+
 .main-container{
     flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 40px;
 }
 
 .col{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
 }
 
 .card{
-    height: 600px;
     position: relative;
 }
 
-.card-desc{
-    height: 100px;
+.image img:last-child{
+    display: none;
+}
+
+.card:hover .image img:first-child{
+    display: none;
+}
+
+.card:hover .image img:last-child{
+    display: inline-block;
 }
 
 .discount, .sost{
+    font-weight: 600;
+    color: white;
     padding: 5px;
     padding-bottom: 20px;
     position: absolute;
@@ -98,15 +113,32 @@ main{
     bottom: 50px;
 }
 
+.discount{
+    background-color: red;
+}
+
 .sost{
+    background-color: green;
     left: 50px;
 }
 
 .favourite{
-    padding: 10px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    padding: 15px;
     position: absolute;
     top: 20px;
     right: 0;
+}
+
+.favourite:hover {
+    color: red;
+}
+
+.price-red{
+    color: red;
+    margin-right: 5px;
+    font-weight: 600;
 }
 
 /* footer */
@@ -114,6 +146,10 @@ main{
 footer{
     color: white;
     background-color: var(--footer);
+}
+
+footer h4{
+    margin-bottom: 7px;
 }
 
 .footer-bar{
@@ -124,6 +160,10 @@ footer{
 
 .footer-legal, .social{
     column-gap: 10px;
+}
+
+.social i{
+    font-size: 1.3rem;
 }
 
 /* utils */
@@ -140,3 +180,4 @@ footer{
 .debug{
     border: 2px dashed black;
 }
+
