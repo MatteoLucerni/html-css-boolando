@@ -26,6 +26,10 @@ a{
     text-decoration: none;
 }
 
+a:hover, i:hover{
+    color: lightgray;
+}
+
 .logo{
     padding: 15px 0;
 }
