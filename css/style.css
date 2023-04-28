@@ -114,6 +114,7 @@ main img{
     padding: 5px;
     position: absolute;
     bottom: 50px;
+    cursor: pointer;
 }
 
 .discount{
