@@ -132,6 +132,7 @@ main img{
 
 .favourite:hover {
     color: red;
+    cursor: pointer;
 }
 
 .price-red{
